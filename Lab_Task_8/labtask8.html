@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout Page</title>
+	<link rel="stylesheet" type="text/css" href="labtask8.css">
+	<script type="text/javascript" src="labtask8.js"></script>
+</head>
+<body>
+	<div class="form">
+		<form name="f1" action="" method="post" onsubmit="return validate()"> 
+			<p class="contact"><label for="name">Full Name <span id="namelocation" style="color:red"></span></label></p> 
+			<input name="name" placeholder="Full name" type="text"> 
+
+			<p class="contact"><label for="email">Email <span id="emaillocation" style="color:red"></span></label></p> 
+			<input name="email" placeholder="example@domain.com" type="email"> 
+
+            <p class="contact"><label for="username">Create a username <span id="unamelocation" style="color:red"></span></label></p> 
+			<input name="username" placeholder="username" type="text"> 
+
+            <p class="contact"><label for="password">Create a password <span id="passwordlocation" style="color:red"></span></label></p> 
+			<input type="password" name="password" type="text"> 
+            <p class="contact"><label for="repassword">Confirm your password <span id="repasswordlocation" style="color:red"></span></label></p> 
+			<input type="password" name="repassword" type="text"> 
+
+           	<fieldset>
+             	<label>Birthday</label>
+              	<label class="month"> 
+              		<select class="select-style" name="BirthMonth">
+						<option value="">Month</option>
+						<option value="01">January</option>
+						<option value="02">February</option>
+						<option value="03" >March</option>
+						<option value="04">April</option>
+						<option value="05">May</option>
+						<option value="06">June</option>
+						<option value="07">July</option>
+						<option value="08">August</option>
+						<option value="09">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12" >December</option>
+					</select><span id="monthlocation" style="color:red"></span>
+              	</label>    
+            	<label>Day <span id="datelocation" style="color:red"></span><input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day"></label>
+            	<label>Year <span id="yearlocation" style="color:red"></span><input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year"></label>
+          	</fieldset>
+	        <select class="select-style gender" name="gender">
+	        <option value="select">I am..</option>
+	        <option value="m">Male</option>
+	        <option value="f">Female</option>
+	        <option value="others">Other</option>
+	        </select><span id="genderlocation" style="color:red"></span><br><br>
+
+	        <p class="contact"><label for="phone">Mobile phone <span id="numberlocation" style="color:red"></span></label></p>
+	        <input name="phone" placeholder="phone number" type="text"> <br>
+	        <input class="buttom" value="Sign me up!" type="submit">
+   		</form> 
+	</div>
+</body>
+</html>
